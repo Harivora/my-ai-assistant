@@ -1,0 +1,8 @@
+streamlit
+google-generativeai
+python-dotenv
+pillow
+PyPDF2
+speechrecognition
+pydub
+ffmpeg-python
