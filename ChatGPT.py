@@ -338,11 +338,14 @@ st.markdown("""
 ---
 <div style='text-align: center; color: #888; font-size: 1em;'>
     Developed by Harikrishna Vora<br>
+    <div style='display: flex; justify-content: center; align-items: center; margin-top: 0.5em;'>
+        <img src='images/AU logo.png' alt='Logo' width='80' style='border-radius: 50%; box-shadow: 0 2px 8px rgba(0,0,0,0.15);'>
+    </div>
 </div>
 """, unsafe_allow_html=True)
 
 logo_path = Path("images/AU logo.png")
 if logo_path.exists():
-    st.image(str(logo_path), width=80)
+    st.image(str(logo_path), width=100, height=100, style = 'display: flex; justify-content: center; align-items: center; margin-top: 0.5em; border-radius: 50%; box-shadow: 0 2px 8px rgba(0,0,0,0.15);')
 else:
     st.warning("Logo not found at 'images/AU logo.png'. Please check the file path and name.")
