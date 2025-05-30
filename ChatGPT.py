@@ -8,6 +8,7 @@ from PIL import Image
 import PyPDF2
 import io
 import json
+from pathlib import Path
 
 # For Audio (basic example)
 try:
@@ -164,6 +165,13 @@ def extract_text_with_ocr_gemini(image_file_uploader_object, model_to_use):
     return model_response_text
 
 # --- UI Layout ---
+# --- Logo at the top (visible on all pages, including API key input) ---
+logo_path = Path("images/AU logo.png")
+if logo_path.exists():
+    st.image(str(logo_path), width=80)
+else:
+    st.warning("Logo not found at 'images/AU logo.png'. Please check the file path and name.")
+
 st.title(" My AI Assistant ✨")
 st.caption("A versatile AI tool for chat, summarization, vision, OCR, and audio transcription.")
 
