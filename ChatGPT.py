@@ -1,5 +1,6 @@
-# main_chat_app.py
 import streamlit as st
+st.set_page_config(layout="wide", page_title="My AI Assistant")
+
 import google.generativeai as genai
 import os
 from dotenv import load_dotenv
@@ -163,7 +164,6 @@ def extract_text_with_ocr_gemini(image_file_uploader_object, model_to_use):
     return model_response_text
 
 # --- UI Layout ---
-st.set_page_config(layout="wide", page_title="My AI Assistant")
 st.title(" My AI Assistant ✨")
 st.caption("A versatile AI tool for chat, summarization, vision, OCR, and audio transcription.")
 
@@ -337,7 +337,7 @@ st.markdown(
         Developed by Harikrishna Vora
     </div>
     <div style="position: fixed; right: 30px; bottom: 30px; z-index: 9999;">
-        <img src="images/AU logo.png" alt="Logo" width="80" style="border-radius: 50%; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
+        <img src="https://github.com/Harivora/my-ai-assistant/blob/main/images/AU%20logo.png" alt="Logo" width="80" style="border-radius: 50%; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
     </div>
     """,
     unsafe_allow_html=True

@@ -22,5 +22,29 @@
     "parts": [
       "Hey there! How can I help you today?\n"
     ]
+  },
+  {
+    "role": "user",
+    "parts": [
+      "Hey "
+    ]
+  },
+  {
+    "role": "model",
+    "parts": [
+      "Hey!  What's up?\n"
+    ]
+  },
+  {
+    "role": "user",
+    "parts": [
+      "I am fine"
+    ]
+  },
+  {
+    "role": "model",
+    "parts": [
+      "That's good to hear!  Is there anything I can help you with today?\n"
+    ]
   }
 ]
