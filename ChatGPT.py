@@ -30,6 +30,11 @@ if not st.session_state.GEMINI_API_KEY:
     st.title(" My AI Assistant ✨")
     st.warning("Please enter your Gemini API key to use the assistant.")
     api_key_input = st.text_input("Enter your Gemini API key:", type="password")
+    st.markdown("""
+    <div style='margin-top: 1em; text-align: center;'>
+        <a href='https://aistudio.google.com/app/apikey' target='_blank' style='color: #4f8cff; font-weight: 500; text-decoration: underline;'>Get your Gemini API key here</a>
+    </div>
+    """, unsafe_allow_html=True)
     if api_key_input:
         # Try to verify the key before saving
         try:
@@ -332,14 +337,16 @@ if user_prompt_text_input:
     # st.rerun()
 
 # --- Footer ---
-# Footer with logo (ensure correct relative path for Streamlit Cloud and local)
-
+# Footer with logo and Gemini API key link (centered)
 st.markdown("""
 ---
 <div style='text-align: center; color: #888; font-size: 1em;'>
     Developed by Harikrishna Vora<br>
     <div style='display: flex; justify-content: center; align-items: center; margin-top: 0.5em;'>
         <img src='images/AU logo.png' alt='Logo' width='80' style='border-radius: 50%; box-shadow: 0 2px 8px rgba(0,0,0,0.15);'>
+    </div>
+    <div style='margin-top: 1em;'>
+        <a href='https://aistudio.google.com/app/apikey' target='_blank' style='color: #4f8cff; font-weight: 500; text-decoration: underline;'>Get your Gemini API key here</a>
     </div>
 </div>
 """, unsafe_allow_html=True)
