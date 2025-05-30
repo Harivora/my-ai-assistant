@@ -330,15 +330,11 @@ if user_prompt_text_input:
     # st.rerun()
 
 # --- Footer ---
-st.markdown(
-    """
-    <hr style="margin-top:2em;margin-bottom:0.5em;">
-    <div style="text-align:center; color: #888; font-size: 1em;">
-        Developed by Harikrishna Vora
-    </div>
-    <div style="position: fixed; right: 30px; bottom: 30px; z-index: 9999;">
-        <img src="https://github.com/Harivora/my-ai-assistant/blob/main/images/AU%20logo.png" alt="Logo" width="80" style="border-radius: 50%; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
-    </div>
-    """,
-    unsafe_allow_html=True
-)
+# Footer with logo (ensure correct relative path for Streamlit Cloud and local)
+st.markdown("""
+---
+<div style='text-align: center; color: #888; font-size: 1em;'>
+    Developed by Harikrishna Vora<br>
+    <img src='images/AU logo.png' alt='Logo' width='80' style='border-radius: 50%; box-shadow: 0 2px 8px rgba(0,0,0,0.15); margin-top: 0.5em;'>
+</div>
+""", unsafe_allow_html=True)
