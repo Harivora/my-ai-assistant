@@ -165,12 +165,6 @@ def extract_text_with_ocr_gemini(image_file_uploader_object, model_to_use):
     return model_response_text
 
 # --- UI Layout ---
-# --- Logo at the top (visible on all pages, including API key input) ---
-logo_path = Path("images/AU logo.png")
-if logo_path.exists():
-    st.image(str(logo_path), width=80)
-else:
-    st.warning("Logo not found at 'images/AU logo.png'. Please check the file path and name.")
 
 st.title(" My AI Assistant ✨")
 st.caption("A versatile AI tool for chat, summarization, vision, OCR, and audio transcription.")
@@ -339,10 +333,16 @@ if user_prompt_text_input:
 
 # --- Footer ---
 # Footer with logo (ensure correct relative path for Streamlit Cloud and local)
+
 st.markdown("""
 ---
 <div style='text-align: center; color: #888; font-size: 1em;'>
     Developed by Harikrishna Vora<br>
-    <img src='images/AU logo.png' alt='Logo' width='80' style='border-radius: 50%; box-shadow: 0 2px 8px rgba(0,0,0,0.15); margin-top: 0.5em;'>
 </div>
 """, unsafe_allow_html=True)
+
+logo_path = Path("images/AU logo.png")
+if logo_path.exists():
+    st.image(str(logo_path), width=80)
+else:
+    st.warning("Logo not found at 'images/AU logo.png'. Please check the file path and name.")
