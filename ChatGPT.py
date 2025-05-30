@@ -172,7 +172,6 @@ def extract_text_with_ocr_gemini(image_file_uploader_object, model_to_use):
 # --- UI Layout ---
 st.markdown("""
 <div style='display: flex; align-items: center; margin-bottom: 1em;'>
-    <img src='https://raw.githubusercontent.com/Harivora/my-ai-assistant/main/images/AU%20logo.png' alt='Logo' width='60' style='border-radius: 50%; box-shadow: 0 2px 8px rgba(0,0,0,0.15); margin-right: 18px;'>
     <div>
         <h1 style='margin: 0; font-size: 2.2rem;'>My AI Assistant ✨</h1>
         <div style='color: #aaa; font-size: 1.1rem;'>A versatile AI tool for chat, summarization, vision, OCR, and audio transcription.</div>
@@ -349,10 +348,7 @@ st.markdown("""
 <div style='text-align: center; color: #888; font-size: 1em;'>
     Developed by Harikrishna Vora<br>
     <div style='display: flex; justify-content: center; align-items: center; margin-top: 0.5em;'>
-        <img src='https://raw.githubusercontent.com/<your-github-username>/<your-repo-name>/main/ChatGPT/images/AU%20logo.png' alt='Logo' width='80' style='border-radius: 50%; box-shadow: 0 2px 8px rgba(0,0,0,0.15);'>
-    </div>
-    <div style='margin-top: 1em;'>
-        <a href='https://aistudio.google.com/app/apikey' target='_blank' style='color: #4f8cff; font-weight: 500; text-decoration: underline;'>Get your Gemini API key here</a>
+        <img src='https://raw.githubusercontent.com/HariVora/my-ai-assistant/main/images/AU%20logo.png' alt='Logo' width='100' style='border-radius: 5%; box-shadow: 0 0px 8px rgba(0,0,0,0.15);'>
     </div>
 </div>
 """, unsafe_allow_html=True)
